@@ -1,0 +1,113 @@
+
+@import url();
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    
+}
+
+body {
+     background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(sbg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+}
+.logo{
+    margin: 0 23px;
+    width: 110px;
+    cursor: pointer;
+}
+.cart-icon{
+    transform: translate(-20px, 0);
+    width: 1.5%;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li a{
+    color:#CC0000;
+}
+nav ul li{
+    font-family:'Pixelify Sans', sans-serif;
+    color: #fff;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    
+    
+}
+nav ul li{
+    color:#f74aaf;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff5757;
+    transition: width 0.2s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+}
+
+.Music-Container {
+    display: inline-flex;
+    transform: translate(0, 75px);
+    
+}
+
+h1 {
+    transform: translate(0, 20px);
+    font-size: 50px;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 700;
+    color: #ed7a7a;
+}
+.box {
+    padding: 20px 10px 50px;
+    background-color: rgba(243, 103, 103, 0.475);
+    margin: 0 10px;
+    border-radius: 30px;
+}
+
+figcaption {
+    font-size: 20px;
+    color: #fff9f9;
+    font-family:'Poppins';
+    font-weight: 900;
+    transform: translate(0, 15px);
+}
+
+audio {
+    transform: translate(0, 30px);
+    
+}
+
